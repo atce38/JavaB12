@@ -1,5 +1,7 @@
 package com.batch12;
 
+import com.batch12.lecutre3.Functions;
+
 public class Main {
 
 //    Main Method which will execute firstly
@@ -9,18 +11,21 @@ public class Main {
         String studentName="Ali Ahmad";
         System.out.println(studentName);
         add(16,15);
-        minus(11,12);
+        add(40,15);
+        Main main=new Main();
+        main.minus(11,12);
         mul(12,13);
         div(7,2);
         mod(18,9);
 
+
     }
-    public static void add(int a,int b){
+    protected static void add(int a,int b){
 
         int result=a+b;
         System.out.println(result);
     }
-    public static void minus(int a,int b){
+    public void minus(int a,int b){
 
         int result=a-b;
         System.out.println(result);
@@ -40,5 +45,6 @@ public class Main {
         int result=a%b;
         System.out.println(result);
     }
+
 
 }
